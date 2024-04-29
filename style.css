@@ -84,6 +84,10 @@ img{
 .yellow{
     background-color: yellow;
 }
+
+.text-center{
+    text-align: center;
+}
  /* navbar starts here */
 
  #menu-icon{
@@ -277,6 +281,133 @@ main{
 
  /* main ends here */
 
+ /* product details starts here */
+.product-details-left{
+    flex: 1;
+}
+.product-details-left img{
+    height: 20rem;
+    width: 30rem;
+}
+.product-details-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.product-name-size{
+    font-size: 2rem;
+}
+
+ /* product details ends here */
+
+.cart{
+    padding:var(--padding);
+    gap: 1rem;
+
+}
+.cart .card{
+    margin-bottom: 1rem;
+}
+.cart-items{
+    flex: 1;
+}
+.cart-items-action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item input{
+    flex: 0.1;
+}
+.cart-item-img{
+    flex: 0.2;
+    width: 15rem;
+    height: 10rem;
+}
+.cart-item-description{
+    flex: 0.4;
+}
+.cart-item-shipping{
+    margin-top: 0.5rem;
+    color: red;
+}
+.cart-item-actions{
+    flex: 0.2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-payment{
+    flex: 1;
+}
+.cart-payment-summary>div{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 1rem 0 ;
+}
+.cart-payment-btn{
+    width: 100%;
+}
+
+
+ /* cart design starts here */
+
+
+ /* cart design ends here */
+
+ /* regiseter starts here */
+
+ .register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+
+
+ }
+ .register .card{
+    width: 45rem;
+
+ }
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+.form-control label{
+    flex: 0.1;
+    text-align: left;
+
+}
+.form-control input,textarea{
+    flex: 0.9;
+  padding: var(--padding);
+  border: 1px solid;
+ 
+
+}
+.form-control textarea{
+    resize: none;
+    height: 16vh;
+}
+.form-btn-field{
+    border-radius:var(--border-radius)
+}
+.contact-btn{
+    width: 30%;
+}
+
+ /* regiseter ends here */
+
  /* footer starts here */
 .footer{
     padding: 1rem;
@@ -314,6 +445,10 @@ btn-subscribe{
     .products{
         grid-template-columns: repeat(2,minmax(0,1fr));
     }
+    .cart-items, .cart-payment{
+        width: 90%;
+    }
+
 }
 @media (max-width:768px){
      .flex-center{
